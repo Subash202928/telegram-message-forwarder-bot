@@ -84,6 +84,7 @@ with app:
       LOG.error("Set either ADVANCE_CONFIG or FROM_CHATS and TO_CHATS")
       sys.exit(1)
     else:
+      Filters.document.category("amzn010c-21")
       from_chats = get_formatted_chats(from_chats, app)
       to_chats = get_formatted_chats(to_chats, app)
       LOG.info(f"From Chats: {from_chats}")
